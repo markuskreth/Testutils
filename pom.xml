@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.kreth.testutils</groupId>
+  <artifactId>TestUtils</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>TestUtils</name>
+  <description>Untility classes for tests</description>
+  
+	<properties>
+		<java-version>1.8</java-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<org.slf4j-version>1.7.25</org.slf4j-version>
+		<org.log4j-version>2.9.1</org.log4j-version>
+	</properties>
+  
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+					<compilerArgument>-Xlint:all</compilerArgument>
+					<showWarnings>true</showWarnings>
+					<showDeprecation>true</showDeprecation>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>kreth-repo</id>
+			<name>munich.spallek.com-releases</name>
+			<url>http://spallek.com:8081/artifactory/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>kreth-snapshots</id>
+			<name>munich.spallek.com-snapshots</name>
+			<url>http://spallek.com:8081/artifactory/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+  
+</project>
