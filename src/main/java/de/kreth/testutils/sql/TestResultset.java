@@ -25,6 +25,10 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
+/**
+* ResultSet implementation for testing.
+* <p>Manages a List of Map Key-Value Pairs delivered as ResultSet rows. Values are simply castet, so types must match.
+*/
 public class TestResultset implements ResultSet {
 
 	private final List<Map<String, Object>> values = new ArrayList<>();
