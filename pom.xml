@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.kreth.testutils</groupId>
   <artifactId>TestUtils</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.3-SNAPSHOT</version>
   <name>TestUtils</name>
   <description>Untility classes for tests</description>
   
