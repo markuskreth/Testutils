@@ -54,6 +54,9 @@ public class TestResultset implements ResultSet {
 		return values.addAll(c);
 	}
 
+	public Map<String, Object> get(int index) {
+		return values.get(index);
+	}
 
 	@Override
 	public void close() throws SQLException {
